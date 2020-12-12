@@ -1,18 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/mainTitle"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/bContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="continueGame"
+            android:text="@string/Continue"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/bNewGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="newGame"
+            android:text="@string/New_game"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/bAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="about"
+            android:text="@string/About"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/bExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exitGame"
+            android:text="@string/Exit"
+            android:textSize="50sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

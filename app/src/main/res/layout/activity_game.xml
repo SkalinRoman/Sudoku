@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/mainTitle"
+        android:textSize="50sp" />
+
+    <GridView
+        android:id="@+id/field"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@drawable/sudoku"
+        android:onClick="setNumber" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/n1" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/n2" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/n3" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/n4" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/n5" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/n6" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/n7" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/n8" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/n9" />
+    </LinearLayout>
+
+</LinearLayout>

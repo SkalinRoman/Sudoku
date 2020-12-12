@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Sudoku</string>
+    <string name="mainTitle">Sudoku</string>
+    <string name="Continue">Continue</string>
+    <string name="New_game">New game</string>
+    <string name="About">About</string>
+    <string name="Exit">Exit</string>
+    <string name="About_game">About game</string>
 </resources>
